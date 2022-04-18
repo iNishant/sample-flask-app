@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  flask:
+    build: 
+      context: .
+    restart: always
+    ports:
+      - "5001:5000"
+    expose:
+      - "5000"
